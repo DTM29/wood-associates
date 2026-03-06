@@ -541,7 +541,7 @@
       <div class="section-label">Access</div>
       <h2>By referral or<br>private approach.</h2>
       <p class="access-coda">If alignment exists, we proceed. If it does not, we decline respectfully.</p>
-      <a href="/cdn-cgi/l/email-protection#482d26393d213a212d3b083f27272c293b3b272b21293c2d3b662b2725" class="access-link">
+      <a href="mailto:enquiries@woodassociates.com" class="access-link">
         <span>Request an Introduction</span>
       </a>
     </div>
@@ -555,7 +555,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -564,4 +564,13 @@
         setTimeout(() => {
           entry.target.classList.add('visible');
         }, i * 80);
-        observer.unobserve(entry.t
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
